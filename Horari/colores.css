@@ -1,0 +1,75 @@
+.M01 {
+    background-color: #2013d191; /* Color para M01 */
+    width: 100px;
+}
+.M02 {
+    background-color: #ff080893; /* Color para M02 */
+    width: 100px;
+} 
+.M03 {
+    background-color: #16f80e9d; /* Color para M03 */
+    width: 100px;
+}
+.M04 {
+    background-color: #ca0b91a9; /* Color para M04 */
+    width: 100px;
+}
+.M05 {
+    background-color: #d5d8159d; /* Color para M05 */
+    width: 100px;
+}
+#PATIO {
+    background-color: #0ef8f89a; /* Color para Patio */
+    letter-spacing: 100px;
+    padding-left: 100px;
+}
+#TUTO {
+    background-color: #f8a60e9a; /* Color para Tutoria */
+    width: 100px;
+}
+table {
+    max-width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+th {
+    background-color: #aaaaaa65;
+}
+.hora{
+    background-color: #aaaaaa65;}
+.gris{background-color: grey;}
+a {
+ color: black;
+}
+.but{
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 16px;
+    background-color: rgba(128, 128, 128, 0.527);
+}
+button:hover{
+    background-color: red;
+}
+.M05:hover{
+    background-color: rgb(255, 255, 255);}
+.M04:hover{
+    background-color: rgb(255, 255, 255);}
+.M03:hover{
+    background-color: rgb(255, 255, 255);}
+.M02:hover{
+    background-color: rgb(255, 255, 255);}
+.M01:hover{
+    background-color: rgb(255, 255, 255);}
+#TUTO:hover{
+    background-color: rgb(255, 255, 255);
+}
+body{
+    background-image: url(https://imgs.search.brave.com/mpPIRXDGnDonJSyyL562fUjj4xzApF_euVR4ix02WlU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9mb25kby1henVs/LWVzcGFjaW8tdGV4/dG8tby1pbWFnZW4t/Zm9uZG8tYXp1bC1h/YnN0cmFjdG9fOTU2/MzYzLTY3MDYuanBn/P3NpemU9NjI2JmV4/dD1qcGc);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

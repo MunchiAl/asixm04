@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--CSS-->
+	<link rel="stylesheet" href="./CSS/pokemon.css">
+	<!--Icono-->
+	<link rel="icon" type="image/x-icon" href="assets/icono.jpg">
+	<!--Script-->
+	<script src="script.js"></script>
+	<title>Pokeview</title>
+	
+</head>
+
+<body>
+	<div id="general">
+		<header>
+			<div id="header">
+				<div class="foto" >
+					<a href="https://www.proven.cat/intraweb/index.php"><img src="./assets/llargo.jpg" alt="foto"></img></a>
+				</div>
+				<nav class="navbar">
+					<ul>
+						<li><a href="Pokeview.html">Home</a></li>
+						<li class="dropdown"><a href="">Listas</a>
+							<ul class="listas">
+								<li><a href="lista.html">Lista 1</a></li>
+								<li><a href="lista2.html">Lista 2</a></li>
+							</ul>
+						</li>
+						<li><a href="form.html">Formulario</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	<div>
+		<div id="anuncio">
+			<a id="greninja">Pokemon Mas Popular Por La Comunidad
+				<img width="260" src="./assets/greninja.jpg" alt=""> 
+			</a>
+			<a id="greninja">¡NUEVO MODO DE JUEGO!
+				<img href="./raid.html" width="260" src="./assets/raid.jpg" alt=""> 
+			</a>
+	</div>
+	<div id="categ" class="ffondo">
+	<h1 class="centrado">Cual es tu pokemon preferido?</h1>
+	<form id="formulario">
+        <label for="nombre">Nombre del Pokémon:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+		<label>Tipos de Pokémon:</label>
+		<div class="fcentro">
+        <div class="grupo-tipos">
+            <label class="tipo-label"><input type="checkbox" id="agua" name="tipo" value="Agua     "> Agua</label>
+            <label class="tipo-label"><input type="checkbox" id="fuego" name="tipo" value="Fuego    "> Fuego</label>
+            <label class="tipo-label"><input type="checkbox" id="planta" name="tipo" value="Planta   "> Planta</label>
+        </div>
+        <div class="grupo-tipos">
+            <label class="tipo-label"><input type="checkbox" id="electrico" name="tipo" value="Eléctrico"> Eléctrico</label>
+            <label class="tipo-label"><input type="checkbox" id="tierra" name="tipo" value="Tierra  "> Tierra</label>
+            <label class="tipo-label"><input type="checkbox" id="volador" name="tipo" value="Volador  "> Volador</label>
+        </div>
+		<div class="grupo-tipos">
+            <label class="tipo-label"><input type="checkbox" id="agua" name="tipo" value="Agua"> Veneno</label>
+            <label class="tipo-label"><input type="checkbox" id="fuego" name="tipo" value="Fuego"> Lucha</label>
+            <label class="tipo-label"><input type="checkbox" id="planta" name="tipo" value="Planta"> Bicho</label>
+        </div>
+		<div class="grupo-tipos">
+            <label class="tipo-label"><input type="checkbox" id="agua" name="tipo" value="Agua"> Dragón</label>
+            <label class="tipo-label"><input type="checkbox" id="fuego" name="tipo" value="Fuego"> Hielo</label>
+            <label class="tipo-label"><input type="checkbox" id="planta" name="tipo" value="Planta"> Acero</label>
+        </div>
+		<div id="errorMensaje" style="color: red;"></div>
+		</div><br>
+
+        <label>Lo usarias en un combate?:</label><br>
+        <input type="radio" id="Si" name="tipo" value="Si">
+        <label for="Si">Si </label>
+        <input type="radio" id="no" name="tipo" value="no">
+        <label for="no">No</label><br><br>
+
+        <label for="lista">A que región pertenece?:</label>
+        <select id="lista" name="lista">
+            <option value="opcion1">Kanto</option>
+            <option value="opcion2">Johto</option>
+            <option value="opcion3">Hoen</option>
+        </select><br><br>
+
+        <label for="descripcion">Descripción del Pokémon:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>	
+		<button type="reset">Reset</button>	
+		</form>
+    </div>
+		</div>
+		<footer>
+			<div id="nombres">Albert Guillaume - Daniel Sanz</div>
+			<div id="fecha-actual"> </div>
+	</footer>
+	</div>
+	
+</body>
+
+</html>

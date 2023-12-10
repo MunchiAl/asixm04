@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS(background)-->
+    <link rel="stylesheet" type="text/css" href="form-background.css">
+    <!--Albert Guillaume-->
+    <title>Document</title>
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <h2 id="enquesta">ENQUESTA PROFESORAT</h2>
+    <fieldset id="borde1">
+        <form method="post">
+            <fieldset id="Azul">
+                <legend id="legend1"><h3>Dades personals</h3></legend>
+                <label for="edat" >Edat *</label><br/><br/>
+                <input type="number" class="tamaño1" name="numero" max="150" required placeholder="Inseriu l'edat" title="¿Realment tens numeros en el nom?" autofocus><br/><br/>
+                <label for="email">Email</label><br/><br/>
+                <input type="email" class="tamaño2" name="email" placeholder="tuemail@dominio.com"><br/><br/>
+                <label for="email">Contraseña *</label><br/><br/>
+                <input type="password" class="tamaño2" name="contraseña" placeholder="Inseriu la contraseña" required><br/><br/>
+                <label for="nacimiento">Data de naixement</label><br/><br/>
+                <input type="date" name="fecha" max="2020-12-31"><br/><br/>
+                <p>* Camps obligatoris</p>
+                </fieldset>
+              <fieldset id="Rosa" name="estudios">
+                <legend class="legend2"><h3>Moduls a evaluar</h3></legend>
+                <select name="moduls">
+                <option value="Seleccioneu" >Seleccioneu</option>
+                <option value="M01" >M01</option>
+                <option value="M02" >M02</option>
+                <option value="M03" >M03</option>
+                <option value="M04" >M04</option>
+                <option value="M05" >M05</option>
+              </select>
+            </fieldset>
+            <fieldset id="Amarillo">
+                <legend id="legend3"><h3>Cicle</h3></legend>
+                <input type="radio" id="asix" name="cicle" value="ASIX">
+                <label for="asix">ASIX</label>
+                <input type="radio" id="dam" name="cicle" value="DAM">
+                <label for="dam">DAM</label>
+                <input type="radio" id="daw" name="cicle" value="DAW">
+                <label for="daw">DAW</label>
+                <input type="radio" id="bio" name="cicle" value="BIOINFORMÀTICA">
+                <label for="bio">BIOINFORMÀTICA</label>
+            </fieldset>
+            <fieldset id="Verde">
+                <legend id="legend4"><h3>Professor a evaluar</h3></legend>
+                <label for="nombre">Nom Professor *</label><br/><br/>
+                <input type="text" class="tamaño2" name="nombre" placeholder="Inseriu el nom" pattern="[A-Za-z]+" title="¿Realment tens numeros en el nom?" required><br/><br/>
+                <label for="nombre">Grau de satisfacció del 0 al 10</label><br/><br/>
+                <input type="range" name="rango"min="0" max="10" list="lista-rango">
+                <datalist id="lista-rango">
+                </datalist><br/>
+                <label for="nombre">Comentaris</label><br/><br/>
+                <textarea name="texto" id="box" rows="4" cols="40" placeholder="Inseriu els comentaris"></textarea>
+            </fieldset>
+            <fieldset id="Marron">
+                <legend id="legend5"><h3>Ets repetidor?</h3></legend>
+                <input type="checkbox" name="repe" value="Si" onclick="uncheckOther(this)">
+                <label for="si"> Si</label>
+                <input type="checkbox" name="repe" value="No" onclick="uncheckOther(this)">
+                <label for="no"> No</label><br/><br/>
+                <script>
+                    function uncheckOther(checkbox) {
+                      var checkboxes = document.getElementsByName('repe');
+                      checkboxes.forEach(function(currentCheckbox) {
+                        if (currentCheckbox !== checkbox) {
+                          currentCheckbox.checked = false;
+                        }
+                      });
+                    }
+                </script>
+                <label for="nombre">Color preferit</label><br/><br/>
+                <input type="color" name="colorpreferit"><br/><br/>
+                <label for="web">Driecció Web</label><br/><br/>
+                <input type="text" class="tamaño2" name="nombre" ><br/><br/>
+                <label for="situació">Situació actual</label><br/><br/>
+                <select name="situació">
+                    <option value="Seleccioneu" >Seleccioneu</option>
+                    <option value="Estudis" >Estudis</option>
+                    <option value="FCT" >FCT</option>
+                    <option value="Dual" >Dual</option>
+                    <option value="Estudis-FCT" >Estudis-FCT</option>
+                    <option value="Treballo-Estudis" >Treballo-Estudis</option>
+                  </select><br/><br/>
+                <input type="file" name="archivo">
+            </fieldset>
+            <fieldset id="Naranja">
+                <legend id="legend6"><h3>CURSOS EXTRES</h3></legend>
+                <input type="checkbox" name="cursos-ex[]" value="Cloud">
+                <label for="cloud"> Cloud Computing</label>
+                <input type="checkbox" name="cursos-ex[]" value="Bid-D">
+                <label for="cloud"> Big Data</label>
+                <input type="checkbox" name="cursos-ex[]" value="Unity">
+                <label for="unity"> Unity 5</label>
+            </fieldset>
+            <fieldset id="Rojo">
+                <legend id="legend7"><h3>CURSOS EXTRES</h3></legend>
+                <label for="data"> Fecha:</label><input type="date" value="data"> <label for="data"> Hora:</label><input type="time" value="time">
+            </fieldset><br/>
+            <fieldset id="Negro">
+                <input type="submit" class="boton" value="Envia" onclick="mostrarAlerta()">
+                <script>
+                    function mostrarAlerta() {
+                      alert("¡Has enviat el formulari!");
+                    }
+                  </script>
+                <input type="reset" class="boton" value="Esborra">
+                <button onclick="self.close()">Surt</button></br>   
+              </fieldset>
+
+        </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--CSS-->
+	<link rel="stylesheet" href="./CSS/pokemon.css">
+	<!--Icono-->
+	<link rel="icon" type="image/x-icon" href="imagenes/icono.jpg">
+	<!--Script-->
+	<script src="script.js"></script>
+	<title>Pokeview</title>
+</head>
+
+<body>
+	<div id="general">
+		<header>
+			<div id="header">
+				<div class="foto" >
+					<a href="https://www.proven.cat/intraweb/index.php"><img src="./imagenes/llargo.jpg" alt="foto"></img></a>
+				</div>
+				<nav class="navbar">
+					<ul>
+						<li><a href="Pokeview.html">Home</a></li>
+						<li class="dropdown"><a href="">Listas</a>
+							<ul class="listas">
+								<li><a href="lista.html">Lista 1</a></li>
+								<li><a href="lista2.html">Lista 2</a></li>
+							</ul>
+						</li>
+						<li><a href="form.html">Formulario</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div>
+			<div id="anuncio">
+				<a id="greninja">Pokemon Mas Popular Por La Comunidad<img width="260" src="./imagenes/greninja.jpg"
+						alt=""> </a>
+				<a id="greninja">¡NUEVO MODO DE JUEGO!<img href="./raid.html" width="260" src="./imagenes/raid.jpg"
+						alt=""> </a>
+			</div>
+			<div id="categ">
+            </div>
+		</div>
+		<footer>
+			<div id="nombres">Albert Guillaume - Daniel Sanz</div>
+			<div id="fecha-actual"> T</div>
+	</footer>
+	</div>
+</body>
+
+</html>

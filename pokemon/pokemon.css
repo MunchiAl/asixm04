@@ -1,0 +1,76 @@
+header {
+  color: var(--theme-community-header-color);
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr min-content;
+  width: 100%;
+  }
+#general{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 48px;
+  max-width: 1236px;
+  position: relative;
+  transition: width .3s,max-width .3s;
+  width: 85%;
+  background-color: rgb(78, 161, 161,0.20);
+}
+#header {
+  position: fixed;
+  height: 200px;
+  width: 65%;
+  margin-top: 10px;
+  background-color: rgb(247, 240, 240,0.95);
+}
+#anuncio{
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 320px;
+  margin-top: 250px;
+  position: fixed;
+  margin-left: 915px;
+  background-color: rgb(247, 240, 240,0.95);
+  }
+#foto{
+  margin-left: auto;
+  height: auto;
+  width: auto;
+}
+#categ{
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 900px;
+
+  margin-top: 250px;
+  background-color: rgb(247, 240, 240,0.95);
+}
+#nombres{
+  position: absolute;
+  bottom: 0px;
+  border: 5px solid pink;
+  bottom: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#greninja{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+  margin-top: 15px;
+  text-align: center;
+  
+}
+table{
+  text-align: center;
+}
+
+
+body{
+  background-image: url("./imagenes/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}

@@ -1,0 +1,200 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+}
+header {
+  color: var(--theme-community-header-color);
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr min-content;
+  width: 100%;
+  z-index: 1;
+}
+body{
+  background-image: url("../assets/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(247, 240, 240);
+  padding: 3,5px 0;
+  width: 1235px;
+
+}
+#anuncio-categ{
+  display: flex;
+  justify-content: space-between;
+}
+#general{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 48px;
+  max-width: 1236px;
+  position: relative;
+  width: 85%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+#header {
+  position: fixed;
+  height: 200px;
+  width: 84.2%;
+  max-width: 1236px;
+  margin-top: 10px;
+  background-color: rgb(247, 240, 240);
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: hsl(0, 0%, 30%);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+.navbar a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.navbar .listas {
+  display: none;
+  position: absolute;
+  background-color: hsl(0, 0%, 30%);
+  list-style: none;
+  padding: 0;
+  left: 0;
+  top: 100%;
+  z-index: 10; 
+}
+nav li:hover a {
+  color: rgb(120, 201, 228);
+  background-color: hsl(0, 0%, 10%);
+}
+.navbar a:hover{
+  background-color: hsl(0, 0%, 10%);
+}
+.navbar li{
+  float: left;
+}
+.navbar .listas li:hover a {
+  color: rgb(100, 193, 224);
+}
+.navbar .dropdown:hover .listas {
+  display: block;
+}
+.listas {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+#anuncio{
+  width: 320px;
+  max-width: 40%; 
+  background-color: rgba(247, 240, 240, 0.95);
+  position: fixed;
+  right: 315px; 
+  height: 620px;
+  margin-top: 193px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+@media (max-width: 768px) {
+  #anuncio {
+    width: 240px;
+    top: 150px;
+  }
+}
+#foto{
+  margin-left: auto;
+  height: auto;
+  width: auto;
+  float: left;
+}
+#categ{
+  display: fixed;
+  height: 620px;
+  width: calc(100% - 340px);
+  margin-top: 250px;
+  background-color: rgb(247, 240, 240,0.95);
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#greninja{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+  margin-top: 15px;
+  text-align: center;
+}
+table{
+  text-align: center;
+  width: 100%;
+}
+.centrado{
+  text-align: center;
+}
+#formulario{
+  text-align: center;
+  font-weight: bold;
+  background-image: url(../assets/anime-pikachu.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  position: relative;
+  z-index: 1; 
+}
+.ffondo{
+  background-image: url(../assets/anime-pikachu.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.fcentro{
+  text-align: center;  
+
+}
+.tipo-label {
+  display: inline-block;
+  width: 90px;
+  text-align: center;
+}
+
+.grupo-tipos {
+  margin-bottom: 5px;
+}
+#nombre-fecha {
+  display: flex;
+  align-items: center;
+}
+#nombres{
+text-align: left;
+  
+
+}
+
+#fecha-actual {
+  
+  text-align: right
+}
