@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Tu Página</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="#">Xulles.cat</a></li>
+            <li><a href="#">Copiar amb SWAG</a></li>
+            <li><a href="#">Excuses si et pillen</a></li>
+            <li>
+              <a href="#">Tipus de xulles</a>
+              <ul class="submenu">
+                <li><a href="#">Corporals</a></li>
+                <li><a href="#">En calculadora</a></li>
+                <li><a href="#">En bolígraf</a></li>
+                <li><a href="#">Electròniques</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Matèries</a>
+              <ul class="submenu">
+                <li><a href="#">Programació</a></li>
+                <li><a href="#">Xarxes</a></li>
+                <li><a href="#">Sistemes operatius</a></li>
+                <li><a href="#">Hardware</a></li>
+              </ul>
+            </li>
+          </ul>
+    </nav>
+        <div class="search-bar">
+            <button class="search-icon" onclick="toggleSearch()">🔍</button>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar...">
+                <button type="button" onclick="search()">Buscar</button>
+            </div>
+        </div>
+        <script>
+            function toggleSearch() {
+                var searchContainer = document.querySelector('.search-container');
+                searchContainer.style.display = (searchContainer.style.display === 'block' ? 'none' : 'block');
+            }
+            function search() {
+                // Agrega lógica de búsqueda aquí si es necesario
+                alert('Búsqueda realizada');
+            }
+        </script>
+    </nav>
+    </header>
+    <section>
+        <article>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </article>
+        <div class="border">
+            <div class="fotos"><img src="xulla.jpeg" alt="Imagen 1"></div>
+            <div class="fotos"><img src="xulla1.jpeg" alt="Imagen 2"></div>
+            <div class="fotos"><img src="xulla2.jpeg" alt="Imagen 3"></div>
+        </div>
+    </section>
+    <footer>
+        <a href="../index.html">Index Principal</a>
+    </footer>
+</body>
+</html>

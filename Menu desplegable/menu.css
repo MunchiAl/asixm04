@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header{
+    background-color: blue;
+    width: 100%;
+    height: 75px;
+}
+h2{
+    margin-top: 40px;
+    font-size: 50px;
+    color: blue;
+}
+.border{
+    margin-top: 40px;
+    border: 4px solid blue;
+    width: 97%;
+    height: 500px;
+    margin-right: 5px;
+    margin-left: 23px;
+}
+.fotos img{
+    float: left;
+    margin: 0; /* Elimina los márgenes */
+    width: 33.33%;
+    height: 500px;
+}
+.lupa{
+    
+    background-color: blue;
+    float: right;
+    cursor: pointer;
+
+}
+.lupa img{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 30px;
+}
+.lupa input {
+    width: 0;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: width 0.3s ease-in-out;
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 10px;
+  }
+
+
+  .lupa.active input {
+    width: 150px;
+    opacity: 1;
+    visibility: visible;
+    margin-left: 5px;
+  }
+ 
+  nav {
+    float: left;
+  }
+
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    font-size: 40px;
+  }
+
+  li {
+    float: left;
+  }
+
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Cambia el color del enlace al pasar el ratón sobre él */
+  a:hover {
+    background-color: rgb(153, 153, 211);
+    
+  }
+
+  /* Estilo del submenú */
+  ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: blue;
+    min-width: 275px;
+    text-align: left;
+  }
+
+  ul.submenu li {
+    float: none;
+    display: list-item;
+    position: relative;
+  }
+
+  ul.submenu a {
+    padding: 10px;
+  }
+
+  li:hover .submenu {
+    display: block;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
