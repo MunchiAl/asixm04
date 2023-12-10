@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  nav {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .navbar a, .sidebar a {
+    color: white;
+    text-decoration: none;
+  }
+  footer a{
+    color: white;
+  }
+
+  .navbar, .sidebar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li, .sidebar li {
+    margin-right: 50px;
+    display: inline;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+  }
+  
+  .sidebar {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+  }
+  
+  .image-container {
+    text-align: center;
+    margin-right: 20px;
+    flex: 1;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+  }
+
+  .image-overlay {
+    position: float;
+  }
+
+  .image-text {
+    margin-top: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: auto;
+  }  
